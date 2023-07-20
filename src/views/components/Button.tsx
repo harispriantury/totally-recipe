@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { IHits } from '../../interfaces/recipe'
 
 type TButton = {
     label: string
