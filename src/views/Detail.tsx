@@ -44,7 +44,7 @@ export const Detail = () => {
                     <h1 className='col-span-7 text-xl font-semibold'>{detail?.recipe.label}</h1>
                     {
                         detail?.recipe.totalWeight && (
-                            <p>Total Weight : {Math.floor(detail?.recipe.totalWeight)}</p>
+                            <p>Total Weight  : {Math.floor(detail?.recipe.totalWeight)}</p>
                         )
                     }
                     <p>Calories : {detail?.recipe.calories ? Math.floor(detail.recipe.calories) : '-'}</p>
