@@ -3,13 +3,14 @@ import { Button } from "./components/Button"
 import { useNavigate } from "react-router-dom"
 import { useAppDispatch, useAppSelectror } from "../store/hooks"
 import { changeValue } from "../store/search"
+import { RootState } from "../store/store"
 
 type TNavbar = {
     handleSubmit: (query: string) => void
 }
 
 export const Navbar: React.FC<TNavbar> = ({ handleSubmit }) => {
-    const value = useAppSelectror((state) => state.search.value)
+    const value = useAppSelectror((state: RootState) => state.search.value)
     const dispatch = useAppDispatch()
 
 
